@@ -1,0 +1,47 @@
+---
+title: Historical notes on Reinforcement Theory
+author: siju swamy
+date: '2020-05-12'
+slug: historical-notes-on-reinforcement-theory
+categories:
+  - RL
+tags:
+  - reinforcement learning
+---
+
+# Introduction {#intro}
+
+
+>"Learn from the past , live in present and plan your future"
+
+
+This is one of the motivational quote from Sri. Sri. Ravisankar. If you can understand its meaning, then you can understand the Reinforcement Learning. Inorder to complete a task every one need a minimum level of skill. A man usually takes much of his time to acquire skills formally or informally. if we can understand how to acquire a new skill, we can enable human species to do things we might not have thought before. Alternately, we can train machines to do more "human" tasks and create true artificial intelligence.
+
+Irrespective of the skill, we first learn by interacting with the environment. Whether we are learning to drive a car or whether it an infant learning to walk, the learning is based on the interaction with the environment. Learning from interaction is the foundational underlying concept for all theories of learning and intelligence.
+
+## History of Reinforcement Learning theory
+
+The early history of reinforcement learning has two main threads, both long and rich, that were pursued independently before intertwining in modern reinforcement learning. One
+thread concerns learning by trial and error, and originated in the psychology of animal
+learning. The roots of Reinforcement Learning is in Psychology and neurosciences. The word _reinforcement_ was  first (1931) introduced by famous psychologist Burrhus Frederic Skinner in his personality theories. This term applies to operant conditioning  and focuses more on the effects of a stimulus.
+Later this term was elaborated by Ivan Pavlov in his theory of Classical Conditioning. There is positive reinforcement and negative reinforcement, in Pavlov's experiment^[For the sake of quality understanding, we will look at Pavlov's famous original experiments with dogs. Pavlov noticed that sight alone of the dog's handler was enough to make the dog salivate. To establish if there can be salivation with the pairing of a stimulus, Pavlov decided to use the bell as the Conditioned Stimulus, so-called because it was being paired with Food (US) to elicit salivation. Pavlov rang the bell, then fed the dogs'. After doing this repeatedly, the pairing of food and bell eventually established the dog's Conditioned Response of salivating to the sound of the bell. After repeatedly doing this pairing, Pavlov removed the food and when ringing this bell the dog would salivate. The key is that the food and bell have to be paired often enough, so that the dog coul learn to associate the bell with food. - Classical Conditioning.], food acts as the positive reinforcement. The reward of food increases behavior. This thread runs through some of the earliest work in artificial intelligence and led to the revival of reinforcement learning in the early 1980s. The second thread
+concerns the problem of optimal control and its solution using value functions and dynamic programming. For the most part, this thread did not involve learning. The two threads were mostly independent, but became interrelated to some extent around a
+third, less distinct thread concerning _temporal-difference_ methods such as that used in the trivial  example in basics of RL theory. All three threads came together in the late 1980s to produce the modern field of reinforcement learning as we present it in this term. The early studies in RL focused on trial and error approaches with strengthening stimulus so as to maximize return. The modern approach in RL focused on optimal control theory. Most of these terms are associated with the mathematical theories of Optimization and Game theory. A brief history of these topics are illustrated in the following section.
+
+### From trial and error to systematic approach
+
+The term "optimal control" came into use in the late 1950s to describe the problem of designing a controller to minimize or maximize a measure of a dynamical system's behavior
+over time. One of the approaches to this problem was developed in the mid-1950s by Richard Bellman and others through extending a nineteenth century theory of Hamilton and Jacobi. This approach uses the concepts of a dynamical system's state and of a
+value function, or "optimal return function," to define a functional equation, now often called the _Bellman equation_. The class of methods for solving optimal control problems by solving this equation came to be known as dynamic programming (Bellman, 1957a). Bellman (1957b) also introduced the discrete stochastic version of the optimal control problem known as Markov decision processes (MDPs). Ronald Howard (1960) devised the policy iteration method for MDPs. All of these are essential elements underlying the
+theory and algorithms of modern reinforcement learning [@sutton1998introduction].
+
+The journey to modern Reinforcement Learning starts from psychological analysis of animal learning and behaviourism. It envisages trial and error approaches, Thorndikes' _law of effects_, Turing's _pleasure-pain system_, Walter's _mechanical tortoise_ , Minskys' _Stochastic Neural-Analog Reinforcement Calculators_, Hoff's _selective bootstrap adaptation_^[Widrow and Hoff called this form of learning "selective bootstrap adaptation" and described it as "learning with a critic" instead of "learning with a teacher." They analyzed this rule and showed how it could learn to play blackjack. This was an isolated foray into reinforcement learning by Widrow, whose contributions to supervised learning were much more influential], Stochastic learning automata, John Holands' _classifier systems_ with _bucket-brigade algorithm_ and genetic algorithm (mainly used in evolutionary computation).
+
+The individual most responsible for reviving the trial-and-error thread to reinforcement learning within artificial intelligence was Harry Klopf (1972, 1975, 1982). Klopf recognized that essential aspects of adaptive behavior were being lost as learning researchers came to focus almost exclusively on supervised learning. What was missing, according to Klopf, were the hedonic aspects of behavior, the drive to achieve some result from the
+environment, to control the environment toward desired ends and away from undesired ends. This is the essential idea of modern trial-and-error learning.
+
+Discussions in this course will be focused on the _Temporal-difference learning_. Temporal-difference learning methods are distinctive in being driven by the difference between temporally successive estimates of the same quantity-for example, of the probability of winning in the tic-tac-toe example. This
+thread is smaller and less distinct than the other two, but it has played a particularly important role in the field, in part because temporal-difference methods seem to be new and unique to reinforcement learning. The origins of temporal-difference learning are in part in animal learning psychology, in particular, in the notion of secondary reinforcers. A secondary reinforcer is a stimulus that has been paired with a primary reinforcer such as food or pain and, as a result, has come to take on similar reinforcing properties. It was Klopf, who brought trial-and-
+error learning together with an important component of temporal-difference learning. Klopf was interested in principles that would scale to learning in large systems, and thus
+was intrigued by notions of local reinforcement, whereby subcomponents of an overall learning system could reinforce one another. He developed the idea of "generalized reinforcement," whereby every component (nominally, every neuron) views all of its
+inputs in reinforcement terms: excitatory inputs as rewards and inhibitory inputs as punishments. He uniquely linked the idea with trial-and-error learning and related it to the massive empirical database of animal learning psychology. Sutton developed Klopf's ideas further, particularly the links to animallearning theories, describing learning rules driven by changes in temporally successive predictions (to make the theories well fit to neural networks). He and Barto refined these ideas and developed a psychological model of classical conditioning based on temporal-difference learning. We will cover the RL based on this approach.

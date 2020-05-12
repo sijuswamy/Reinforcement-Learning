@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>reinforcement learning on A blog on Reinforcement learning</title>
-    <link>/tags/reinforcement-learning/</link>
-    <description>Recent content in reinforcement learning on A blog on Reinforcement learning</description>
+    <title>RL on A blog on Reinforcement learning</title>
+    <link>/categories/rl/</link>
+    <description>Recent content in RL on A blog on Reinforcement learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 12 May 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/reinforcement-learning/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/rl/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,15 +19,6 @@
       <guid>/2020/05/12/historical-notes-on-reinforcement-theory/</guid>
       <description>Introduction“Learn from the past , live in present and plan your future”
 This is one of the motivational quote from Sri. Sri. Ravisankar. If you can understand its meaning, then you can understand the Reinforcement Learning. Inorder to complete a task every one need a minimum level of skill. A man usually takes much of his time to acquire skills formally or informally. if we can understand how to acquire a new skill, we can enable human species to do things we might not have thought before.</description>
-    </item>
-    
-    <item>
-      <title>Introduction to Reinforcement learning</title>
-      <link>/2020/05/12/introduction-to-reinforcement-learning/</link>
-      <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/2020/05/12/introduction-to-reinforcement-learning/</guid>
-      <description>Introduction to Reinforcement Learning Reinforcement learning is learning what to do-how to map situations to actions-so as to maximize a numerical reward signal. The learner is not told which actions to take, but instead must discover which actions yield the most reward by trying them. In the most interesting and challenging cases, actions may affect not only the immediate reward but also the next situation and, through that, all subsequent rewards.</description>
     </item>
     
   </channel>
