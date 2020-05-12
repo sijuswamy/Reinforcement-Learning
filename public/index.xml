@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Introduction to Reinforcement learning</title>
+      <link>/2020/05/12/introduction-to-reinforcement-learning/</link>
+      <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/05/12/introduction-to-reinforcement-learning/</guid>
+      <description>Introduction to Reinforcement Learning Reinforcement learning is learning what to do-how to map situations to actions-so as to maximize a numerical reward signal. The learner is not told which actions to take, but instead must discover which actions yield the most reward by trying them. In the most interesting and challenging cases, actions may affect not only the immediate reward but also the next situation and, through that, all subsequent rewards.</description>
+    </item>
+    
+    <item>
       <title>Second trial to build a updatable website</title>
       <link>/2020/05/12/second-trial-to-build-a-updatable-website/</link>
       <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
