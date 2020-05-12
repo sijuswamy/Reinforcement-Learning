@@ -6,21 +6,10 @@
     <description>Recent content in R on A blog on Reinforcement learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Second trial to build a updatable website</title>
-      <link>/2020/05/12/second-trial-to-build-a-updatable-website/</link>
-      <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/2020/05/12/second-trial-to-build-a-updatable-website/</guid>
-      <description>Dear All,
-I am trying to build an active blog for reinforcement learning here.!
-siju</description>
-    </item>
     
     <item>
       <title>Hello R Markdown</title>
