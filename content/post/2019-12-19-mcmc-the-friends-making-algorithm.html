@@ -1,0 +1,23 @@
+---
+title: MCMC- the friends making algorithm
+author: siju swamy
+date: '2019-12-19'
+slug: mcmc-the-friends-making-algorithm
+categories:
+  - Sampling Methods
+tags:
+  - Probabilistic Machine Learning
+---
+
+
+
+<div id="markov-chain-mote-carlo-sampling-technique" class="section level1">
+<h1>Markov Chain Mote-Carlo Sampling Technique</h1>
+<p>I am explaining the MCMC sampling algorithm in my AI&amp;ML class. Suddenly a student asked me “Sir, Can you give a simple slimily to explain this algorithm?” I freezed for a moment. Any way I told them this story.</p>
+<p>Long ago… at the time of Mr. Markov’s graduation, he had only one intimate friend. He has decided to expand his friendship. But his parents taught him that friends should have good quality like Mr. John (Markov’s intimate friend). So he set some weightage to all the desirable qualities that he expected from his friend (Mathematically these weightages can be calculated with Mote-Carlo simulation). He gave equal chance for all students in his college to be his friend (chance for friendship is uniformly distributed). In each occasion (step) he picks each one with whom he was associated and compare his/her proposal quality distribution with his existing best friend. If that measure is higher than the present ‘best friend’, then Markov has selected him as his new ‘best friend’ and expand his friend circle with this new one. Else keep the existing best friend as the best friend in current step too. He has continued this process. Finally Mr. Markov got a circle of ‘best friends’ in which each of them are compete for the ‘best friend label’. Later in his research period he has formulated this as an algorithm as follows:</p>
+<p><strong>Step 1:</strong> Form a simple proposal distribution <span class="math inline">\(q(z|z^\tau)\)</span> with the current state <span class="math inline">\(\tau\)</span> so that <span class="math inline">\(z^{(1)},z^{(2)},\ldots\)</span> forms a Markov Chain. Evaluate <span class="math inline">\(p(z)=\dfrac{\tilde{p}(z)}{Z_p}\)</span> with some normalization factor <span class="math inline">\(Z_p\)</span>. for the current state <span class="math inline">\(z^{\tau}\)</span>.</p>
+<p><strong>Step 2:</strong> Generate the candidate sample <span class="math inline">\(z^*\)</span> from the proposal distribution and accept it if <span class="math inline">\(A(z^*,z^{(\tau)})&gt;u\)</span> such that <span class="math inline">\(u\)</span> is taken from <span class="math inline">\(\mathcal{U}(0,1)\)</span> where,
+<span class="math display">\[A(z^*,z^{(\tau)})=min\left(1,\dfrac{\tilde{p}(z^*)}{\tilde{p}(z^{(\tau)})}\right)\]</span>
+<strong>Step 3:</strong> If the candidate sample is accepted , then <span class="math inline">\(z^{(\tau+1)}=z^*\)</span> else discard <span class="math inline">\(z^*\)</span> and assign <span class="math inline">\(z^{(\tau+1)}=z^{(\tau)}\)</span> and another sample is drawn from <span class="math inline">\(q(z|z^{(\tau+1)})\)</span>.</p>
+<p><strong>Step:4</strong> As <span class="math inline">\(\tau\to \infty\)</span>, the <span class="math inline">\(z^{(\tau)}\sim p(z)\)</span>. So a sample with required distribution is obtained.</p>
+</div>

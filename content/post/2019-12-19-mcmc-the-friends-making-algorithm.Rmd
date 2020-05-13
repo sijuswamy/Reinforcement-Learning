@@ -1,0 +1,25 @@
+---
+title: MCMC- the friends making algorithm
+author: siju swamy
+date: '2019-12-19'
+slug: mcmc-the-friends-making-algorithm
+categories:
+  - Sampling Methods
+tags:
+  - Probabilistic Machine Learning
+---
+
+# Markov Chain Mote-Carlo Sampling Technique 
+
+I am explaining the MCMC sampling algorithm in my AI&ML class. Suddenly a student asked me "Sir, Can you give a simple slimily to explain this algorithm?"  I freezed for a moment. Any way I told them this story.
+
+Long ago... at the time of Mr. Markov's graduation, he had only one intimate friend. He has decided to expand his friendship. But his parents taught him that friends should have good quality like Mr. John (Markov's intimate friend). So he set some weightage to all the desirable qualities that he expected from his friend (Mathematically these weightages can be calculated with Mote-Carlo simulation). He gave equal chance for all students in his college to be his friend (chance for friendship is uniformly distributed). In each occasion (step) he picks each one with whom he was associated and compare his/her proposal quality distribution with his existing best friend. If that measure is higher than the present 'best friend', then Markov has selected him as his new 'best friend' and expand his friend circle with this new one.  Else keep the existing best friend as the best friend in current step too. He has continued this process. Finally Mr. Markov got a circle of 'best friends' in which each of them are compete for the 'best friend label'. Later in his research period he has formulated this as an algorithm as follows:
+
+
+**Step 1:** Form a simple proposal distribution $q(z|z^\tau)$ with the current state $\tau$ so that $z^{(1)},z^{(2)},\ldots$ forms a Markov Chain. Evaluate $p(z)=\dfrac{\tilde{p}(z)}{Z_p}$ with some normalization factor $Z_p$. for the current state $z^{\tau}$.
+
+**Step 2:** Generate the candidate sample $z^*$ from the proposal distribution and accept it if $A(z^*,z^{(\tau)})>u$ such that $u$ is taken from $\mathcal{U}(0,1)$ where,
+	$$A(z^*,z^{(\tau)})=min\left(1,\dfrac{\tilde{p}(z^*)}{\tilde{p}(z^{(\tau)})}\right)$$
+**Step 3:** If the candidate sample is accepted , then $z^{(\tau+1)}=z^*$ else discard $z^*$ and assign $z^{(\tau+1)}=z^{(\tau)}$ and another sample is drawn from $q(z|z^{(\tau+1)})$.
+
+**Step:4** As $\tau\to \infty$, the $z^{(\tau)}\sim p(z)$. So a sample with required distribution is obtained.

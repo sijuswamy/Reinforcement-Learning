@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Probabilistic Machine Learning on A blog on Reinforcement learning</title>
+    <link>/tags/probabilistic-machine-learning/</link>
+    <description>Recent content in Probabilistic Machine Learning on A blog on Reinforcement learning</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 19 Dec 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/probabilistic-machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MCMC- the friends making algorithm</title>
+      <link>/2019/12/19/mcmc-the-friends-making-algorithm/</link>
+      <pubDate>Thu, 19 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/12/19/mcmc-the-friends-making-algorithm/</guid>
+      <description>Markov Chain Mote-Carlo Sampling TechniqueI am explaining the MCMC sampling algorithm in my AI&amp;amp;ML class. Suddenly a student asked me “Sir, Can you give a simple slimily to explain this algorithm?” I freezed for a moment. Any way I told them this story.
+Long ago… at the time of Mr. Markov’s graduation, he had only one intimate friend. He has decided to expand his friendship. But his parents taught him that friends should have good quality like Mr.</description>
+    </item>
+    
+  </channel>
+</rss>
